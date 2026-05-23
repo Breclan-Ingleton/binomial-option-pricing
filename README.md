@@ -15,3 +15,15 @@ The file `one_step_binomial.py` models a stock that can move up or down over one
 It calculates the payoff of a European call and put option in each state.
 
 It then uses the risk-neutral probability to calculate the fair option price.
+
+## Two-Step Binomial Model
+
+The file `two_step_binomial.py` extends the model to two periods.
+
+It calculates option payoffs at the final stock prices, then works backwards through the tree to find the option price at time 0.
+
+## Multi-Step Binomial Model
+
+The file `multi_step_binomial.py` generalises the model to any number of steps.
+
+It uses a function to calculate European call and put prices using backward induction.
