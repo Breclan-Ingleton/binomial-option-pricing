@@ -1,6 +1,7 @@
 # Binomial Option Pricing
 
 This project uses simple Python models to price European options using binomial stock price trees.
+This project is intended to build intuition for how simple option pricing models work before moving on to more advanced financial mathematics.
 
 ## Files
 
