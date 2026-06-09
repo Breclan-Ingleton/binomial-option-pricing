@@ -29,6 +29,20 @@ The file `multi_step_binomial.py` generalises the model to any number of steps.
 
 It uses a function to calculate European call and put prices using backward induction.
 
+## Parameters
+
+The main multi-step model uses the following parameters:
+
+| Parameter | Meaning |
+|---|---|
+| `S0` | Initial stock price |
+| `K` | Strike price of the option |
+| `r` | Risk-free rate per time step |
+| `u` | Up factor for the stock price |
+| `d` | Down factor for the stock price |
+| `N` | Number of time steps in the binomial tree |
+| `option_type` | Either `"call"` or `"put"` |
+
 ## Example results
 
 Using the example parameters in the scripts, the models give:
