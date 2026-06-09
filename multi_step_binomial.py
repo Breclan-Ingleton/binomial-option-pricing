@@ -1,6 +1,12 @@
 # Multi-step binomial option pricing model
 
 def binomial_option_price(S0, K, r, u, d, N, option_type):
+    """
+    Price a European call or put option using a multi-step binomial tree.
+
+    The function calculates terminal option payoffs, then works backwards
+    through the tree using risk-neutral probability and discounting.
+    """
     q = (1 + r - d) / (u - d)
 
     option_values = []
