@@ -28,3 +28,15 @@ It calculates option payoffs at the final stock prices, then works backwards thr
 The file `multi_step_binomial.py` generalises the model to any number of steps.
 
 It uses a function to calculate European call and put prices using backward induction.
+
+## Example results
+
+Using the example parameters in the scripts, the models give:
+
+| File | European call price | European put price |
+|---|---:|---:|
+| `one_step_binomial.py` | 7.14 | 2.38 |
+| `two_step_binomial.py` | 10.71 | 1.42 |
+| `multi_step_binomial.py` | 22.81 | 1.16 |
+
+These values are different because each file uses a different number of time steps. The one-step and two-step files are mainly explanatory, while `multi_step_binomial.py` generalises the method to any number of steps.
