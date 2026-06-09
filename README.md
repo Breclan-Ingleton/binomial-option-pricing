@@ -43,6 +43,17 @@ The main multi-step model uses the following parameters:
 | `N` | Number of time steps in the binomial tree |
 | `option_type` | Either `"call"` or `"put"` |
 
+## Risk-neutral probability
+
+The multi-step model uses the risk-neutral probability
+
+```python
+q = (1 + r - d) / (u - d)
+```
+This is not meant to be the real-world probability that the stock price goes up.
+
+Instead, it is a mathematical probability used for no-arbitrage pricing. It lets the model calculate the discounted expected future option value at each step of the tree.
+
 ## Example results
 
 Using the example parameters in the scripts, the models give:
